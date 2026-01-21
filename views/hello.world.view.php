@@ -1,22 +1,21 @@
 <?php
 /** @var CView $this */
 
-// 1. Zabbix標準のウィジェット枠を作成
-$widget = (new CWidget())
-    ->setTitle(_('Hello World Module')) // ページタイトル
-    ->setDocUrl(CDocHelper::getUrl(CDocHelper::MONITORING_DASHBOARD_VIEW)); // 右上のヘルプアイコン（任意）
+// Zabbix 6.0/7.0系の標準的なウィジェット構築方法
+$widget = new CWidget();
+$widget->setTitle(_('Hello World Module'));
 
-// 2. 余白（パディング）のあるコンテンツエリアを作成
-$content = (new CDiv())
-    ->addClass(ZBX_STYLE_LAYOUT_WRAPPER) // Zabbix標準のレイアウト枠
-    ->addItem(
-        (new CDiv([
-            (new CTag('h1', true, $data['message'])),
-            (new CTag('p', true, 'This page is a custom module for US client monitoring.'))
-        ]))
-        ->addClass(ZBX_STYLE_OBJ_METABOX) // 白い背景と影のついたボックス
-        ->addStyle('padding: 20px;')     // ここでしっかり余白を確保
-    );
+// コンテンツを囲う箱（Div）を作成
+$div = new CDiv();
 
-// 3. ウィジェットにコンテンツを追加して表示
-$widget->addItem($content)->show();
+// Zabbix標準の余白クラスを適用
+$div->addClass(ZBX_STYLE_LAYOUT_WRAPPER);
+$div->addStyle('padding: 30px;'); // 確実な余白設定
+
+// メッセージを表示
+$div->addItem(new CTag('h1', true, $data['message']));
+$div->addItem(new CTag('p', true, 'This page is a custom module.'));
+
+// ウィジェットにアイテムを追加して表示
+$widget->addItem($div);
+$widget->show();
