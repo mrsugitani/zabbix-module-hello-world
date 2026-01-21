@@ -3,7 +3,7 @@
     "id": "hello_world",
     "name": "Hello World Module",
     "version": "1.0",
-    "namespace": "HelloWorld",
+    "namespace": "modules/HelloWorld",
     "author": "Your Name",
     "description": "My first Zabbix module.",
     "actions": {
