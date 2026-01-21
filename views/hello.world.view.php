@@ -1,10 +1,4 @@
 <?php
-/**
- * @var CView $this
- * @var array $data
- */
-
-(new CHtmlPage())
-    ->setTitle('Hello World')
-    ->addItem(new CDiv($data['message']))
-    ->show();
+/** @var CView $this */
+echo '<h1>' . $data['message'] . '</h1>';
+echo '<p>This is a custom Zabbix module page.</p>';
