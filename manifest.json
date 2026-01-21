@@ -1,13 +1,13 @@
 {
     "manifest_version": 2.0,
-    "id": "hello_world",
+    "id": "MyAddress",
+    "type": "module",
     "name": "Hello World Module",
-    "version": "1.0",
     "namespace": "HelloWorld",
+    "version": "1.0",
     "author": "Your Name",
-    "description": "My first Zabbix module.",
     "actions": {
-        "hello.world.view": {
+        "hello.world": {
             "class": "HelloWorldAction",
             "view": "hello.world.view"
         }
