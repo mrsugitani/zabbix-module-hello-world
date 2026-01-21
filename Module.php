@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\HelloWorld;
+namespace HelloWorld;
 
 use Zabbix\Core\CModule;
 
