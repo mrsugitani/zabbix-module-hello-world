@@ -17,3 +17,5 @@ Uses the Zabbix standard Module framework with dedicated **Actions** and **Views
 Includes a custom-styled view with proper padding and background styling for better visibility.
 * Designed to match the Zabbix native look and feel.
 * Ensures readability across different screen sizes.
+
+## Deployment
