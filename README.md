@@ -19,3 +19,4 @@ Includes a custom-styled view with proper padding and background styling for bet
 * Ensures readability across different screen sizes.
 
 ## Deployment
+Make a directory of repositories on /usr/share/zabbix/ui/modules.
