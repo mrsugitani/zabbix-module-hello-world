@@ -3,7 +3,7 @@
 
 ## Project Overview
 This module is a custom extension for the Zabbix frontend. Its primary purpose is to demonstrate the integration of a new functional page into the Zabbix UI framework.
-
+Tested with ZABBIX 7.4
 ---
 
 ## Features
